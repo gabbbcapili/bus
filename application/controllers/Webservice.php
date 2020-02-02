@@ -105,9 +105,9 @@ class Webservice extends CI_Controller {
 	        $from= $finresult->smtp_username;
 	        $name=$finresult->title;
 	        $s =base_url();
-	        $sub="NEW TRUEBUS PASSWORD";
+	        $sub="NEW Philtranco PASSWORD";
 	        $email= $data['email_id'];
-	        $msg="Your new TRUEBUS pasword is  ".$rand_pwd.". Please use this for authentication purpose. You can also reset the password later...";
+	        $msg="Your new Philtranco pasword is  ".$rand_pwd.". Please use this for authentication purpose. You can also reset the password later...";
 	        $send = send_mail($from,$name,$email,$sub,$msg);
 	        //if( $send ){ 
             $data1 = array('id'=>$user->id,'username' =>$user->username,'password' => md5($rand_pwd));

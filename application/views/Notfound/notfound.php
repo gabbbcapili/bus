@@ -45,17 +45,17 @@
          <div class="col-md-9">
          <div class="tb_footer">
          <ul>
-         <li><a href="#">About TrueBus &nbsp;|</a></li>
+         <li><a href="#">About Philtranco &nbsp;|</a></li>
          <li><a href="#">FAQ   &nbsp;|</a></li>
          <li><a href="#">Careers  &nbsp;|</a></li>
-         <li><a href="#">TrueBus Coupons  &nbsp; |</a></li>
+         <li><a href="#">Philtranco Coupons  &nbsp; |</a></li>
          <li><a href="#">Contact Us   &nbsp;|</a></li>
          <li><a href="#">Terms of Use   &nbsp;|</a></li>
          <li><a href="#">Privacy Policy   &nbsp;|</a></li>
-         <li><a href="#">TrueBus on Mobilenew .</a></li>
+         <li><a href="#">Philtranco on Mobilenew .</a></li>
          </ul>
          </div>
-         <div class="footer_con">  &#169;  2016 TrueBus All Rights Reserved</div>
+         <div class="footer_con">  &#169;  2019 Philtranco All Rights Reserved</div>
          </div>
          <div class="col-md-3">
          <div class="tb_social">

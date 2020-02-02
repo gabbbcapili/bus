@@ -23,7 +23,7 @@
   <body class="hold-transition login-page">
       <div class="login-box">
         <div class="login-logo">
-          <a href="<?php echo base_url(); ?>"><b>True Bus</b></a>
+          <a href="<?php echo base_url(); ?>"><b>Philtranco</b></a>
              </div><!-- /.login-logo -->
                 <div class="login-box-body">
                     <p class="login-box-msg">Sign in to start your session</p>

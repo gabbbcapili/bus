@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>TRUE BUS Installer</title>
+  <title>Philtranco Installer</title>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url();?>assets/css/installer.css" rel="stylesheet" type="text/css"><link href="<?php echo base_url();?>assets/css/parsley.css" rel="stylesheet" type="text/css">
 
