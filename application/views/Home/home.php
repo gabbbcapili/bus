@@ -86,7 +86,7 @@
                               <div class="tb_offers1">
                                  <img src="<?php echo base_url();?>assets/images/rupees.png">
                                  <div class="tb_list_offer">
-                                    <div class="ofer_list">UPTO RS.100 OFF</div>
+                                    <div class="ofer_list">UPTO PHP 100 OFF</div>
                                     <div class="ofer_list_bold">TRAVEL SMART</div>
                                     <div class="ofer_list_normal">Code:RBM120</div>
                                     <div class="ofer_list_normal">Book Using Pay Money</div>
@@ -108,7 +108,7 @@
                               <div class="tb_offers3">
                                  <img src="<?php echo base_url();?>assets/images/phone.png">
                                  <div class="tb_list_offer">
-                                    <div class="ofer_list"> &nbsp;&nbsp;FLAT Rs.100 OFF</div>
+                                    <div class="ofer_list"> &nbsp;&nbsp;FLAT PHP 100 OFF</div>
                                     <div class="ofer_list_bold left"> &nbsp;&nbsp;Truebus APP OFFER</div>
                                     <div class="ofer_list_normal">&nbsp;&nbsp; book via the Truebus APP</div>
                                     <div class="ofer_list_normal">&nbsp;&nbsp;  Code:ERHH54</div>

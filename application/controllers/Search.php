@@ -25,6 +25,9 @@ class Search extends CI_Controller {
 	
 	public function index()
 	{
+
+		
+
 		$template['page'] = "Search/search";
 		$template['page_title'] = "Book Ticket - Search Buses";
 		$template['logo'] = get_settings_details(1);
@@ -38,6 +41,16 @@ class Search extends CI_Controller {
 		die;
 		*/
 		$result = $this->search_model->select_bus($request);
+
+
+		$obj = new stdClass();
+		$obj->board_point = 'Pasay';
+		$obj->drop_point = 'Naga';
+		$obj->dates = "02/03/2020";
+		$result = $this->search_model->select_bus($obj);
+		// die(var_dump($request));
+		// print json_encode($result);
+
 
 		$i=0;
 			$droppointw=""; 
@@ -58,6 +71,7 @@ class Search extends CI_Controller {
 				$droppointD = array(); 
 
 			   if(!empty($results)) {	
+					
 					$layout =json_decode($results['layout']);
 					$length = sizeof($layout);
 					$new_array = array();
@@ -98,22 +112,32 @@ class Search extends CI_Controller {
 					}else{
 						$canceltime='0';
 					}
+					
 
 					$droptime = strtotime($results['drop_time']);
 					$pickuptime = strtotime($results['board_time']);
 					$duration = ($droptime - $pickuptime)/3600;
 					if($results['points']!=null){
 						$poin= array_map('trim', explode('<=>',$results['points']));
-						$points='';
+						$points= [];
+
 						foreach( $poin as $rs){
 							if(!empty($rs)) {
+								
 								$roww = array_map('trim', explode('<#>',$rs));
-								$points[]=array('time'=>$roww[1],'dplace'=>$roww[0],'landmark'=>$roww[2],'address'=>$roww[3],'board_id'=>$roww[4]);
+								
+								$points[] =[
+									'dplace'=>$roww[0],
+									'time'=>$roww[1],
+									'landmark'=>$roww[2],
+									'address'=>$roww[3],
+									'board_id'=>$roww[4],
+								];
 								$singlep []=$roww[0];					
 							}
-							
 						}
 					}
+
 					
 					if($results['droppoints']!=null){
 						$stop= array_map('trim', explode('<=>',$results['droppoints']));
@@ -176,6 +200,7 @@ class Search extends CI_Controller {
 			}
 
 			$result = $new_result;
+
 			
 		
 		/*foreach($result as $results){
@@ -325,6 +350,7 @@ class Search extends CI_Controller {
 		}*/
 		/*print_r($result);*/
 
+		// die(var_dump($result));
 		print json_encode($result);
 		
 	}public function select_one_bus() {

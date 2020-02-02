@@ -32,7 +32,6 @@ class Login_model extends CI_Model {
 			$this->session->set_userdata('logged_in',$sess_array);
 			$user = $this->session->userdata('logged_in');	
             if($remember=='on' && $remember!=''){
-			
 				  $cookie = array(
 					'name'   => 'user',
 					'value'  => $user,
@@ -40,13 +39,8 @@ class Login_model extends CI_Model {
 				 );
 		   
 				$this->input->set_cookie($cookie);
-
 				$this->input->cookie('logged_in', false);    
- 
-
-			
 		    }	
-            
           return true;			
 		}else{
 			return false;

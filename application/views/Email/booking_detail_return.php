@@ -47,7 +47,7 @@
                 </div>
                 
                 <div style="width:32%; margin:0 12px 0 12px;   float:left; background:#585858; padding:47px 0 24px 0; "> 
-                <div style="width:100%; float:left; text-align:center; color:#fff; font-size:15px;"> Rs.<?php echo ($data[1]['amount']-$data[1]['off_amount']);?> </div>
+                <div style="width:100%; float:left; text-align:center; color:#fff; font-size:15px;"> PHP<?php echo ($data[1]['amount']-$data[1]['off_amount']);?> </div>
                 
                 </div>
                 

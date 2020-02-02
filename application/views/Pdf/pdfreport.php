@@ -378,7 +378,7 @@
 				
 				
 				<div style="font-size:13px;width:26%;float:left; color: #404043;font-weight:600;">
-				Total Fare :Rs.<?php echo ($result[0]['amount']-$result[0]['off_amount']);?>.00 
+				Total Fare :PHP <?php echo ($result[0]['amount']-$result[0]['off_amount']);?>.00 
 				</div>
 				
 			

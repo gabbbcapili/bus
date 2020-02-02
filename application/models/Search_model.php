@@ -38,7 +38,9 @@ class Search_model extends CI_Model {
 			$this->db->group_by('b.id'); 
 			$query = $this->db->get(); 
 			$result = $query->result_array();
-			/*echo $this->db->last_query();*/
+			// echo $this->db->last_query();
+			// die(var_dump($result));
+
 			return $result;
 		}
 
@@ -60,6 +62,7 @@ class Search_model extends CI_Model {
 			$this->db->where('status','Booking');
 		
 			$query  = $this->db->get($table);
+			// die(var_dump($this->db->last_query()));
 			/*echo $this->db->last_query()*/  //--- Table name = User
 			$result = $query->result_array(); 
 			return $result;	

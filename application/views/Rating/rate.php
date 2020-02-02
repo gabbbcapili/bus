@@ -47,7 +47,7 @@
                 </div>
                 
                 <div style="width:32%; margin:0 12px 0 12px;   float:left; background:#585858; padding:47px 0 24px 0; "> 
-                <div style="width:100%; float:left; text-align:center; color:#fff; font-size:15px;"> Rs.<?php echo $book['fare'];?></div>
+                <div style="width:100%; float:left; text-align:center; color:#fff; font-size:15px;"> PHP <?php echo $book['fare'];?></div>
                 
                 </div>
                 
@@ -74,10 +74,10 @@
         <div style="width:100%; float:left; font-size:16px; padding:0 0 10px 0;"> Extra Charges: </div> 
         <div style="width:100%; float:left; color:#666262; font-size:11px; line-height:22px;">
         
-        * Maximum of 4 passengers allowed for Indica & Sedan. <br />
-        * Cancellation charges of Rs.100 applicable if cancelled within 30 mins of pickup time. <br />
+        * Maximum of 4 passengers allowed. <br />
+        * Cancellation charges of PHP .100 applicable if cancelled within 30 mins of pickup time. <br />
         * Any Toll, Parking, as applicable. <br />
-        * No waiting charges upto 15 mins after scheduled pickup time. Rs.50 per 30 mins after that. <br /> 
+        * No waiting charges upto 15 mins after scheduled pickup time. PHP .50 per 30 mins after that. <br /> 
         * Final fare payable will include Service Tax
         
         </div>

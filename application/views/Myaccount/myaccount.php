@@ -221,13 +221,13 @@
                          
                            <div class="tb_tour">Fare Break Up<br>
                               <span class="tb_tour_type" >Base Fare  &nbsp;  &nbsp;
-                                   &nbsp;&nbsp;  &nbsp; &nbsp;  RS.{{trips.fare}}</span>
+                                   &nbsp;&nbsp;  &nbsp; &nbsp;  PHP {{trips.fare}}</span>
                                    <span class="tb_tour_type" >Number of tickets :{{trips.total_count}} &nbsp;  &nbsp;
-                                   &nbsp;&nbsp;  &nbsp; &nbsp;  RS.{{trips.fare}}</span>
+                                   &nbsp;&nbsp;  &nbsp; &nbsp;  PHP {{trips.fare}}</span>
                                   
                                    <div ng-if="trips.off_amount.length!=null">
                                    <span class="tb_tour_type" >Offer Amount   &nbsp;  &nbsp;
-                                   &nbsp;RS.{{trips.off_amount}}</span>
+                                   &nbsp;PHP {{trips.off_amount}}</span>
                                  </div>
                            </div>
                          
@@ -252,7 +252,7 @@
                   </div> 
                
                   <div class="total_amount_rht2">
-           TOTAL AMOUNT <span class="rs_left"> RS.{{trips.amount}}</span>
+           TOTAL AMOUNT <span class="rs_left"> PHP {{trips.amount}}</span>
                   </div> 
                   </div> 
              
@@ -290,15 +290,15 @@
                                                          
 
                               <div class="order_cnct_detail total last">Total Balance  </div>
-                              <div class="order_contact_inf total last">: Rs.00</div>
+                              <div class="order_contact_inf total last">: PHP 00</div>
                            </li>
                            <li>
                               <div class="order_cnct_detail total last"> Your Cash </div>
-                              <div class="order_contact_inf total last">: Rs.0    </div>
+                              <div class="order_contact_inf total last">: PHP 0    </div>
                            </li>
                            <li>
                               <div class="order_cnct_detail  total last"> Offer Cash </div>
-                              <div class="order_contact_inf  total last">  : Rs.51     </div>
+                              <div class="order_contact_inf  total last">  : PHP 51     </div>
                            </li>
                         </ul>
                      </div>

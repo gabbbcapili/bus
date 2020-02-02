@@ -379,12 +379,12 @@
                                              </tr>
                                              <tr>
                                                 <td >Before {{details.canceltime}}</td>
-                                                <td ng-show="details.type =='percentage'">Rs. {{details.percentage}}</td>
-												<td ng-show="details.type =='flat'" >Rs. {{details.flat}}</td>
+                                                <td ng-show="details.type =='percentage'">PHP{{details.percentage}}</td>
+												<td ng-show="details.type =='flat'" >PHP {{details.flat}}</td>
                                              </tr>
                                              <tr>
                                                 <td>After {{details.canceltime}}</td>
-                                                <td>Rs.{{details.fare}}</td>
+                                                <td>PHP.{{details.fare}}</td>
                                              </tr>
                                              
                                           </tbody>
@@ -618,7 +618,7 @@
                      </div>
                      <div class="tb_seats_list5">
                         <div class="tb_seats_list1_inner">
-                           <p style="font-weight:600;font-size:15px;">RS {{details.fare}}</p>
+                           <p style="font-weight:600;font-size:15px;">PHP {{details.fare}}</p>
 						   <?php 
 						   if(!$this->session->userdata('logged_in')){
                 
@@ -883,11 +883,11 @@
                </li>
                <li>
                <div class="order_cnct_detail"><img src="<?php echo base_url();?>assets/images/seat_select.png"> Selected Seat </div>
-               <div class="order_contact_inf">Base Fare:  <span class="tb_fare rate_bus">  Rs.{{details.fare}} </span>   </div>
+               <div class="order_contact_inf">Base Fare:  <span class="tb_fare rate_bus">  PHP {{details.fare}} </span>   </div>
                </li>
                <li>
                <div class="order_cnct_detail"><img src="<?php echo base_url();?>assets/images/booked.png">  Booked  </div>
-               <div class="order_contact_inf">  Total Fare   <span class="tb_fare total_rate">  Rs.0</span>  </div>
+               <div class="order_contact_inf">  Total Fare   <span class="tb_fare total_rate">  PHP 0</span>  </div>
                </li>
                </ul>
                </div>

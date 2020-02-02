@@ -39,15 +39,13 @@
                     <div class="rb_directionn2">
                         <div class="rb_directionn">&nbsp;</div>
                         <div class="rb_directionn1" style="border-left:3px solid #eeeeee;">
-                            <img src="<?php echo base_url();?>assets/images/pearl.png">
+                            <img src="<?php echo base_url();?>assets/images/tb-logo.png" width="200px" height="35px">
                             <div class="tb_Corporation">
                                 {{Onewaypaymentdetails[0].bus_name}}
                             </div>
                         </div>
                     </div>
                 </div>
-
-
 
 
             </div>
@@ -181,10 +179,6 @@
                                     <div class="rb_name2_lft"> <span class="name_tbb">
                                         Email</span><span class="star_tb">*</span>
                                         <input type="email" name="email" class="rb_age1" placeholder="Ticket will be sent to this mail ID" required>
-
-
-
-
                                         <input type="hidden" name="oamount" value="{{Onewaypaymentdetails[0].fare*numberss}}">
                                         <input type="hidden" name="obus_id" value="{{Onewaypaymentdetails[0].bus_id}}">
                                         <input type="hidden" name="orout_id" value="{{oroute_id}}">
@@ -207,7 +201,7 @@
                     <div class="pay_details">Payment Details</div>
                     <div class="amount_pay2 amt_pay amount_check_left">
                         <div class="amount_pay2_tb_new">
-                            <span class="tb_pay">Amount Payable:</span> <span class="tb_pay1">Rs.{{totals}}.00</span>
+                            <span class="tb_pay">Amount Payable:</span> <span class="tb_pay1">PHP {{totals}}.00</span>
                         </div>
 
                         <div>
@@ -260,7 +254,7 @@
                                 Onward Fare
                             </div>
                             <div class="payment_sum2">
-                                Rs.{{Onewaypaymentdetails[0].fare}} * {{numberss}}
+                                PHP {{Onewaypaymentdetails[0].fare}} * {{numberss}}
                             </div>
                         </div>
                     </div>
@@ -270,7 +264,7 @@
                                 <div class="offer"> Return Fare</div>
                             </div>
                             <div class="offer">
-                                Rs.{{Twowaypaymentdetails[0].fare}} * {{numberss}}
+                                PHP {{Twowaypaymentdetails[0].fare}} * {{numberss}}
                             </div>
                         </div>
                     </div>
@@ -280,7 +274,7 @@
                                 <div class="payment_sum" style="font-weight:600;">Total</div>
                             </div>
                             <div class="payment_sum2" style="font-weight:600;">
-                                Rs.{{totals}}
+                                PHP {{totals}}
                             </div>
                         </div>
 
@@ -360,7 +354,7 @@
                                  </div> -->
                         <!-- end -->
                         <br>
-                        <div class="rupees"> <img src="<?php echo base_url();?>assets/images/inner2.png"><span class="get_off">  GET 20% OFF.<span class="upto">  (Upto Rs.50) <br>
+                        <div class="rupees"> <img src="<?php echo base_url();?>assets/images/inner2.png"><span class="get_off">  GET 20% OFF.<span class="upto">  (Upto PHP 50) <br>
                                     <span class=" PayUMoney" >100% Secure Payments through Paypal</span>
                             </span>
                             <br>
@@ -418,11 +412,11 @@
                     </div>
                     <div class="amount_pay2">
                         <div class="amount_pay2_tb">
-                            <span class="tb_pay">Amount Payable:</span> <span class="tb_pay1">Rs.{{totals}}.00</span>
+                            <span class="tb_pay">Amount Payable:</span> <span class="tb_pay1">PHP {{totals}}.00</span>
                         </div>
                         <br>
                         <br>
-                        <div class="rupees"> <img src="<?php echo base_url();?>assets/images/inner2.png"><span class="get_off">  GET 20% OFF.<span class="upto">  (Upto Rs.50) <br>
+                        <div class="rupees"> <img src="<?php echo base_url();?>assets/images/inner2.png"><span class="get_off">  GET 20% OFF.<span class="upto">  (Upto PHP 50) <br>
                                     <span class=" PayUMoney" >100% Secure Payments through Paytm</span>
                             </span>
                             <br>
@@ -762,7 +756,7 @@ UK
 </div>
 <!-- promo code Management script created by Anju MS on 08-12-2016-->
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
 <script>
     $(document).ready(function() {
         $("#promo_check").click(function(e) {
@@ -791,8 +785,8 @@ UK
                         var actual = parseInt(amt) - parseInt(off);
 
                         $('#amount').val(actual);
-                        $('.tb_pay1').html('Rs.' + actual);
-                        $("#promo_status").html('You have got Rs.' + off + ' OFF');
+                        $('.tb_pay1').html('PHP ' + actual);
+                        $("#promo_status").html('You have got PHP ' + off + ' OFF');
                     } else {
                         $("#promo_status").html('Invalid promo code');
                     }
